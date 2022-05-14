@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+div.polaroid {
+  width: 65%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  border-radius:8%;
+  background-color: #2f375b;
+  
+ 
+  margin: 20px;
+  flex: 30%;
+  
+}
+
+
+/* Header*/
+.button1 {
+   
+  color: rgb(255, 255, 255); 
+  background-color: #f1f1f100;
+  border: 1px solid #ffffff ;
+  border-radius: 10%;
+  margin-left: 10%;
+  
+}
+
+.header {
+ 
+
+  background: #2f375b;
+  
+}
+
+/* Style the top navigation bar */
+ul {
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        margin-right: 10%;
+        padding: 0;
+        overflow: hidden;
+        
+        
+ 
+  width: 90%;
+      }
+     
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color:white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      a img {
+          transition: transform .7s ease-in-out;
+          
+        }
+        img:hover {
+          transform: rotate(360deg);
+          
+        }
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* column */
+.side {
+  flex: 33%;
+  
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+
+}
+h1{
+  text-align: center;
+  color:rgb(206, 183, 13) ;
+  font-family:serif;
+  font-size: 40px;
+
+}
+.col2 {
+  flex: 33%;
+  
+  padding: 20px;
+}
+
+.side2 {
+  flex: 35%;
+  
+  
+}
+.fakeimg {
+  
+  width: 18%;
+  
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  
+  background:rgb(53, 53, 53);
+}
+a:hover {
+  color: rgb(203, 232, 76);
+}
+button:hover{
+  color: rgb(203, 232, 76);
+}
+
+legend {
+ 
+  color: white;
+  padding: 5px ;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+
+  
+}
+label {
+ 
+ color: white;
+ padding: 5px ;
+ font-size: 20px;
+ font-family:'Courier New', Courier, monospace;
+ 
+}
+input {
+  margin: 5px;
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+}
+textarea{
+  margin: 5px;
+  width: 80%;
+  
+  border-radius: 5px;
+}
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 12px;
+  border: 1px,white;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  width:30% ;
+}
+input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  
+}
+.container {
+  border-radius: 5px;
+
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+<!-- Note -->
+
+  <ul>
+    <li><h2 style="color:white; margin-left: 10px;font-family:serif;padding-left: 35px;">Portfelio</h2></li>
+    
+    <li style="float:right;font-family:serif"><a class="active" href="file:///C:/Users/DST/Desktop/gomycode/CSScheckpoint/contact.html?first+name=&email=&password=&number=&subject=">Contact </a></li>
+    <li style="float:right;font-family:serif"><a class="active" href="file:///C:/Users/DST/Desktop/gomycode/CSScheckpoint/projects.html">Projects </a>
+    <li style="float:right;font-family:serif"><a class="active" href="file:///C:/Users/DST/Desktop/gomycode/CSScheckpoint/index.html">About </a></li>
+  </ul>      
+  </ul>
+
+
+  
+
+
+<!-- Header -->
+<br>
+  <h1 >Contact me</h1>
+ 
+
+<div class="row">
+
+  <div class="side2">
+    
+  </div>
+  
+    <div class="fakeimg">
+      <fieldset style="border-radius:5px ;">
+        <legend >Sign Up:</legend>
+      <form>
+        <label>Name:</label> <br>
+        <input type="text" name="first name"  /><br>
+        <br />
+  
+        <label>Email:</label> <br>
+        <input type="email" id="email" name="email"><br>
+        <br />
+    
+
+  
+        <label>Password:</label> <br>
+        <input type="password" name="password"><br>
+        <br />
+        <label>Age :</label> <br>
+        <input type="number" name="number"  /> <br>
+        <br />
+        
+        <label>Gender: </label> <br>
+        <select>
+            <option value="male">male</option>
+            <option value="female">female</option> <br>
+            
+          </select><br> <br />
+          <textarea id="subject" name="subject" placeholder="Add a comment here.." style="height:70px"></textarea>
+
+          <input type="submit" value="Submit">
+          <br /> <br>
+        
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="side2">
+     
+    </div>
+
+  </div>
+  <br><br><br><br><br><br><br><br><br><br>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<div class="footer">
+  <div class="row">
+    <div class="side2">
+      <h2 style="color: #ffffff;text-align:left;font-size: 30px;">Contact Me</h2>
+      <h3 style="color: rgb(153, 136, 10);"> wael zegneni </h3>
+      <h3 style="color: rgb(153, 136, 10);"> 24445693 </h3>
+      <h3 style="color:rgb(153, 136, 10) ;"> waelzegneni@gmail.com </h3>
+    </div>
+    
+      <div class="fakeimg">
+       <br><br><br>
+          <a href="https://github.com/" target="https://github.com/"> <img src="catt.PNG" alt="oh"  > </a>
+          <a href="https://waelzegneni.github.io/csscheckpoint/linkedin.com/" target="https://waelzegneni.github.io/csscheckpoint/linkedin.com/"> <img src="linkedinT.png" alt="oh"  > </a>
+          <a href="https://www.codewars.com/" target="https://www.codewars.com/"> <img src="cercleT.PNG" alt="oh"  > </a> 
+  
+      </div>
+
+      <div class="side2">
+       <br><br><br>
+        <h3 style="text-align:end;color:rgb(153, 136, 10)"> desgined by Wael </h3>
+        
+      </div>
+
+    </div>
+
+ 
+</div>
+
+</body>
+</html>
+
+
